@@ -1,6 +1,6 @@
 {
     "name": "react-list-scroll-bound",
-    "version": "0.14.7",
+    "version": "0.14.8",
     "description": "prevent body scrolling, if list border reached, to get a better experience",
     "main": "src/index.js",
     "repository": {
@@ -22,7 +22,7 @@
     },
     "homepage": "https://github.com/fluse/react-list-scroll-bound",
     "scripts": {
-        "compile": "browserify -t  [ babelify --presets [ es2015 react] ]  ./index.js -o ./dist/listScrollBound.js"
+        "compile": "browserify -t [ babelify --presets [ es2015 react ] ]  ./index.js -o ./dist/listScrollBound.js"
     },
     "devDependencies": {
         "react": "^0.14.7",

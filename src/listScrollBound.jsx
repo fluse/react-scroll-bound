@@ -1,6 +1,6 @@
 'use strict';
 
-import React, { Component } from 'react';
+import React, { Component, PropTypes } from 'react';
 
 class ListScrollBound extends Component {
 
@@ -23,16 +23,16 @@ class ListScrollBound extends Component {
     render() {
 
         return (
-            <this.props.tagName onWheel={this.preventBodyScrolling} {...this.props}>
+            <ul onWheel={this.preventBodyScrolling} {...this.props}>
                 {this.props.children}
-            </this.props.tagName>
+            </ul>
         );
     }
 }
 
 ListScrollBound.propTypes = {
-    tagName: React.PropTypes.string,
-    className: React.PropTypes.string
+    tagName: PropTypes.string,
+    className: PropTypes.string
 }
 
 ListScrollBound.defaultProps = {

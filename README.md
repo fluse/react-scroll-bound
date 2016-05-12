@@ -3,6 +3,13 @@ prevent body scrolling, if list border reached, to get a better experience
 
 this is an react ES6 component
 
+## install
+
+```
+> npm install react-list-scroll-bound --save
+```
+
+
 ## how to use
 
 ```jsx

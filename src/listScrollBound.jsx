@@ -23,9 +23,9 @@ class ListScrollBound extends Component {
     render() {
 
         return (
-            <ul onWheel={this.preventBodyScrolling} {...this.props}>
+            <this.props.tagName onWheel={this.preventBodyScrolling} {...this.props}>
                 {this.props.children}
-            </ul>
+            </this.props.tagName>
         );
     }
 }

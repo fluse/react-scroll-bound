@@ -2,39 +2,60 @@
 
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
-import React, { Component, PropTypes } from 'react';
+var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
-class ListScrollBound extends Component {
+var _react = require('react');
 
-    constructor(props) {
-        super(props);
+var _react2 = _interopRequireDefault(_react);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+var ListScrollBound = function (_Component) {
+    _inherits(ListScrollBound, _Component);
+
+    function ListScrollBound(props) {
+        _classCallCheck(this, ListScrollBound);
+
+        return _possibleConstructorReturn(this, Object.getPrototypeOf(ListScrollBound).call(this, props));
     }
 
-    preventBodyScrolling(e) {
-        const el = e.currentTarget;
+    _createClass(ListScrollBound, [{
+        key: 'preventBodyScrolling',
+        value: function preventBodyScrolling(e) {
+            var el = e.currentTarget;
 
-        if (el.clientHeight + el.scrollTop + e.deltaY >= el.scrollHeight) {
-            e.preventDefault();
-            el.scrollTop = el.scrollHeight;
-        } else if (el.scrollTop + e.deltaY <= 0) {
-            e.preventDefault();
-            el.scrollTop = 0;
+            if (el.clientHeight + el.scrollTop + e.deltaY >= el.scrollHeight) {
+                e.preventDefault();
+                el.scrollTop = el.scrollHeight;
+            } else if (el.scrollTop + e.deltaY <= 0) {
+                e.preventDefault();
+                el.scrollTop = 0;
+            }
         }
-    }
+    }, {
+        key: 'render',
+        value: function render() {
 
-    render() {
+            return _react2.default.createElement(
+                this.props.tagName,
+                _extends({ onWheel: this.preventBodyScrolling }, this.props),
+                this.props.children
+            );
+        }
+    }]);
 
-        return React.createElement(
-            this.props.tagName,
-            _extends({ onWheel: this.preventBodyScrolling }, this.props),
-            this.props.children
-        );
-    }
-}
+    return ListScrollBound;
+}(_react.Component);
 
 ListScrollBound.propTypes = {
-    tagName: PropTypes.string,
-    className: PropTypes.string
+    tagName: _react.PropTypes.string,
+    className: _react.PropTypes.string
 };
 
 ListScrollBound.defaultProps = {

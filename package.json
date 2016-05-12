@@ -1,0 +1,30 @@
+{
+  "name": "react-list-scroll-bound",
+  "version": "0.14.1",
+  "description": "A mixin for determining whether a component is visible to the user or not.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fluse/react-list-scroll-bound.git"
+  },
+  "keywords": [
+    "React",
+    "scrolling",
+    "prevent body",
+    "list",
+    "react-component"
+  ],
+  "author": "Holger Schauf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fluse/react-list-scroll-bound/issues"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "homepage": "https://github.com/fluse/react-list-scroll-bound",
+  "peerDependencies": {
+    "react": "^0.14.7",
+    "react-dom": "^0.14.7"
+  }
+}

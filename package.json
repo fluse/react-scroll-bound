@@ -22,7 +22,7 @@
   },
   "homepage": "https://github.com/fluse/react-list-scroll-bound",
   "scripts": {
-    "compile": "babel --plugins transform-react-jsx ./src/listScrollBound.jsx -o ./dist/listScrollBound.js",
+    "compile": "babel --plugins transform-react-jsx ./src/listScrollBound.jsx -o ./dist/listScrollBound.js"
   },
   "devDependencies": {
     "babel-cli": "^6.8.0",

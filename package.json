@@ -1,8 +1,8 @@
 {
     "name": "react-list-scroll-bound",
-    "version": "0.14.3",
+    "version": "0.14.4",
     "description": "prevent body scrolling, if list border reached, to get a better experience",
-    "main": "dist/ListScrollBound.js",
+    "main": "src/ListScrollBound.js",
     "repository": {
         "type": "git",
         "url": "https://github.com/fluse/react-list-scroll-bound.git"

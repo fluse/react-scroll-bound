@@ -1,14 +1,18 @@
 # react-list-scroll-bound
-prevent body scrolling, if list border reached, to get a better experience
+prevent body scrolling, if list bottom or top reached.
+This brings a better control for user and increase the use experience.
 
-this is an react ES6 component
+## example
+
+![ScreenShot](/example.png)
+
+build with react 14.x transpilled from ES6 to ES5
 
 ## install
 
 ```
 > npm install react-list-scroll-bound --save
 ```
-
 
 ## how to use
 
@@ -52,7 +56,7 @@ so you can set all what you want and need
 
 if you want to add or optimize this component, feel free <3
 
-clone this repository
+clone this repository and run install
 
 ```
 npm install

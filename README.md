@@ -1,12 +1,15 @@
 # react-list-scroll-bound
-prevent body scrolling, if list bottom or top reached.
-This brings a better control for user and increase the use experience.
+prevent body scrolling on list bottom or top end.
+Brings a better control for user and increase use experience.
 
 ## example
 
 ![ScreenShot](/example.png)
 
-build with react 14.x transpilled from ES6 to ES5
+build with react 15.x
+
+[![npm package](https://nodei.co/npm/react-list-scroll-bound.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-list-scroll-bound/)
+[![NPM](https://nodei.co/npm-dl/react-list-scroll-bound.png?months=6&height=3)](https://www.npmjs.com/package/react-list-scroll-bound)
 
 ## install
 

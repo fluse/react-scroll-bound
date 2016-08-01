@@ -23,7 +23,11 @@ class ListScrollBound extends Component {
     render() {
 
         return (
-            <this.props.tagName onWheel={this.preventBodyScrolling} {...this.props}>
+            <this.props.tagName
+                onWheel={this.preventBodyScrolling}
+                className={this.props.className}
+                onClick={this.props.onClick.bind(this)}
+            >
                 {this.props.children}
             </this.props.tagName>
         );
@@ -32,12 +36,14 @@ class ListScrollBound extends Component {
 
 ListScrollBound.propTypes = {
     tagName: PropTypes.string,
-    className: PropTypes.string
+    className: PropTypes.string,
+    onClick: PropTypes.func,
 }
 
 ListScrollBound.defaultProps = {
     tagName: 'ul',
-    className: null
+    className: null,
+    onClick: () => {}
 }
 
 module.exports = ListScrollBound;

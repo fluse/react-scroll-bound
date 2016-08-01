@@ -1,7 +1,5 @@
 'use strict';
 
-var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
-
 var _createClass = function () { function defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } } return function (Constructor, protoProps, staticProps) { if (protoProps) defineProperties(Constructor.prototype, protoProps); if (staticProps) defineProperties(Constructor, staticProps); return Constructor; }; }();
 
 var _react = require('react');
@@ -44,7 +42,11 @@ var ListScrollBound = function (_Component) {
 
             return _react2.default.createElement(
                 this.props.tagName,
-                _extends({ onWheel: this.preventBodyScrolling }, this.props),
+                {
+                    onWheel: this.preventBodyScrolling,
+                    className: this.props.className,
+                    onClick: this.props.onClick.bind(this)
+                },
                 this.props.children
             );
         }
@@ -55,12 +57,14 @@ var ListScrollBound = function (_Component) {
 
 ListScrollBound.propTypes = {
     tagName: _react.PropTypes.string,
-    className: _react.PropTypes.string
+    className: _react.PropTypes.string,
+    onClick: _react.PropTypes.func
 };
 
 ListScrollBound.defaultProps = {
     tagName: 'ul',
-    className: null
+    className: null,
+    onClick: function onClick() {}
 };
 
 module.exports = ListScrollBound;

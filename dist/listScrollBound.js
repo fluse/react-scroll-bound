@@ -26,6 +26,7 @@ var ListScrollBound = function (_Component) {
     _createClass(ListScrollBound, [{
         key: 'preventBodyScrolling',
         value: function preventBodyScrolling(e) {
+
             var el = e.currentTarget;
 
             if (el.clientHeight + el.scrollTop + e.deltaY >= el.scrollHeight) {
@@ -35,6 +36,8 @@ var ListScrollBound = function (_Component) {
                 e.preventDefault();
                 el.scrollTop = 0;
             }
+
+            this.props.onWheel();
         }
     }, {
         key: 'render',
@@ -43,6 +46,7 @@ var ListScrollBound = function (_Component) {
             return _react2.default.createElement(
                 this.props.tagName,
                 {
+                    id: this.props.id,
                     onWheel: this.preventBodyScrolling,
                     className: this.props.className,
                     onClick: this.props.onClick.bind(this)
@@ -56,15 +60,19 @@ var ListScrollBound = function (_Component) {
 }(_react.Component);
 
 ListScrollBound.propTypes = {
+    id: _react.PropTypes.string,
     tagName: _react.PropTypes.string,
     className: _react.PropTypes.string,
-    onClick: _react.PropTypes.func
+    onClick: _react.PropTypes.func,
+    onWheel: _react.PropTypes.func
 };
 
 ListScrollBound.defaultProps = {
+    id: null,
     tagName: 'ul',
     className: null,
-    onClick: function onClick() {}
+    onClick: function onClick() {},
+    onWheel: function onWheel() {}
 };
 
 module.exports = ListScrollBound;

@@ -1,6 +1,6 @@
 {
   "name": "react-list-scroll-bound",
-  "version": "15.0.4",
+  "version": "15.0.5",
   "description": "prevent body scrolling, if list border reached, to get a better experience",
   "main": "dist/listScrollBound.js",
   "repository": {

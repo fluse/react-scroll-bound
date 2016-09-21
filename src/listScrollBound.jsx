@@ -9,6 +9,7 @@ class ListScrollBound extends Component {
     }
 
     preventBodyScrolling(e) {
+
         const el = e.currentTarget;
 
         if (el.clientHeight + el.scrollTop + e.deltaY >= el.scrollHeight) {
@@ -18,12 +19,15 @@ class ListScrollBound extends Component {
             e.preventDefault();
             el.scrollTop = 0;
         }
+
+        this.props.onWheel();
     }
 
     render() {
 
         return (
             <this.props.tagName
+                id={this.props.id}
                 onWheel={this.preventBodyScrolling}
                 className={this.props.className}
                 onClick={this.props.onClick.bind(this)}
@@ -35,15 +39,19 @@ class ListScrollBound extends Component {
 }
 
 ListScrollBound.propTypes = {
+    id: PropTypes.string,
     tagName: PropTypes.string,
     className: PropTypes.string,
     onClick: PropTypes.func,
+    onWheel: PropTypes.func
 }
 
 ListScrollBound.defaultProps = {
+    id: null,
     tagName: 'ul',
     className: null,
-    onClick: () => {}
+    onClick: () => {},
+    onWheel: () => {}
 }
 
 module.exports = ListScrollBound;

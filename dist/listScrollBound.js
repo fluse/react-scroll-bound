@@ -47,7 +47,7 @@ var ListScrollBound = function (_Component) {
                 this.props.tagName,
                 {
                     id: this.props.id,
-                    onWheel: this.preventBodyScrolling,
+                    onWheel: this.preventBodyScrolling.bind(this),
                     className: this.props.className,
                     onClick: this.props.onClick.bind(this)
                 },

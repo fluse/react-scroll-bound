@@ -6,6 +6,10 @@ var _react = require('react');
 
 var _react2 = _interopRequireDefault(_react);
 
+var _propTypes = require('prop-types');
+
+var _propTypes2 = _interopRequireDefault(_propTypes);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
@@ -20,7 +24,7 @@ var ListScrollBound = function (_Component) {
     function ListScrollBound(props) {
         _classCallCheck(this, ListScrollBound);
 
-        return _possibleConstructorReturn(this, Object.getPrototypeOf(ListScrollBound).call(this, props));
+        return _possibleConstructorReturn(this, (ListScrollBound.__proto__ || Object.getPrototypeOf(ListScrollBound)).call(this, props));
     }
 
     _createClass(ListScrollBound, [{
@@ -60,11 +64,11 @@ var ListScrollBound = function (_Component) {
 }(_react.Component);
 
 ListScrollBound.propTypes = {
-    id: _react.PropTypes.string,
-    tagName: _react.PropTypes.string,
-    className: _react.PropTypes.string,
-    onClick: _react.PropTypes.func,
-    onWheel: _react.PropTypes.func
+    id: _propTypes2.default.string,
+    tagName: _propTypes2.default.string,
+    className: _propTypes2.default.string,
+    onClick: _propTypes2.default.func,
+    onWheel: _propTypes2.default.func
 };
 
 ListScrollBound.defaultProps = {

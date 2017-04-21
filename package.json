@@ -1,6 +1,6 @@
 {
   "name": "react-list-scroll-bound",
-  "version": "15.0.6",
+  "version": "15.5.4",
   "description": "prevent body scrolling, if list border reached, to get a better experience",
   "main": "dist/listScrollBound.js",
   "repository": {
@@ -31,7 +31,8 @@
     "babel-preset-react": "^6.5.0"
   },
   "peerDependencies": {
-      "react": "^0.14.0 || ^15.0.1",
-      "react-dom": "^0.14.0 || ^15.0.1"
+    "react": "^0.14.0 || ^15.5.0",
+    "prop-types": "^15.5.8",
+    "react-dom": "^0.14.0 || ^15.5.0"
   }
 }

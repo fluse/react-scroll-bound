@@ -39,6 +39,24 @@ default tagName is `<ul>`
 
 ```
 
+### get scroll event
+
+```jsx
+
+let onWheel = function (event) {
+    console.log(event)
+}
+
+let onClick = function (event) {
+    console.log(event)
+}
+
+<ListScrollBound onWheel={onWheel} onClick={onClick} className="my-list">
+    {this.getListPoints()}
+</ListScrollBound>
+
+```
+
 ### set more propTypes
 
 all given properties will set on the given ListScrollBound element, with

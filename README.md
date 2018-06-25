@@ -6,7 +6,7 @@ Brings a better control for user and increase use experience.
 
 ![ScreenShot](/example.png)
 
-build with react 15.x
+supports react 15.x and 16.x
 
 [![npm package](https://nodei.co/npm/react-list-scroll-bound.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-list-scroll-bound/)
 [![NPM](https://nodei.co/npm-dl/react-list-scroll-bound.png?months=6&height=3)](https://www.npmjs.com/package/react-list-scroll-bound)
@@ -34,6 +34,24 @@ default tagName is `<ul>`
 ```jsx
 
 <ListScrollBound tagName="div" className="my-list">
+    {this.getListPoints()}
+</ListScrollBound>
+
+```
+
+### get events
+
+```jsx
+
+let onWheel = function (event) {
+    console.log(event)
+}
+
+let onClick = function (event) {
+    console.log(event)
+}
+
+<ListScrollBound onWheel={onWheel} onClick={onClick} className="my-list">
     {this.getListPoints()}
 </ListScrollBound>
 

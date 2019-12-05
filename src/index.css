@@ -39,7 +39,7 @@ h1 small {
 
 h2 {
     font-size: 30px;
-    padding: 0 0 5vh;
+    padding: 0 0 2vh;
 }
 
 h3 {
@@ -58,7 +58,7 @@ p {
     padding: 20px;
     max-width: 900px;
     align-items: stretch;
-    margin: 0 auto 40vh;
+    margin: 0 auto 10vh;
 }
 
 .grd-2 {

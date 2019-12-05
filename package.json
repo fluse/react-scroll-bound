@@ -1,6 +1,6 @@
 {
     "name": "react-scroll-bound",
-    "version": "16.12.0",
+    "version": "16.12.1",
     "description": "prevent parent scrolling, if list scroll end reached, for better experience",
     "main": "dist/scrollBound.js",
     "repository": {

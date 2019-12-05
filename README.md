@@ -17,13 +17,11 @@ npm install react-scroll-bound --save
 ## Usage
 
 ```jsx
-
 import ScrollBound from 'react-scroll-bound'
 
 <ScrollBound>
     {this.getListPoints()}
 </ScrollBound>
-
 ```
 
 Set css for element overflow scroll
@@ -40,11 +38,9 @@ Set css for element overflow scroll
 default tagName is `<ul>`
 
 ```jsx
-
 <ScrollBound tagName="div">
     {this.getListPoints()}
 </ScrollBound>
-
 ```
 
 ### Set properties
@@ -52,7 +48,6 @@ default tagName is `<ul>`
 all attributes and properties will transmitted with `{...this.props}`
 
 ```jsx
-
 <ScrollBound 
     id="name" 
     onWheel={onWheel} 
@@ -61,7 +56,6 @@ all attributes and properties will transmitted with `{...this.props}`
 >
     {this.getListPoints()}
 </ScrollBound>
-
 ```
 
 ## Development

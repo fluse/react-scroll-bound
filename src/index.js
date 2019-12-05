@@ -19,14 +19,23 @@ class App extends Component {
         return (
             <section>
                 <h1>
-                    <strong>Prevent Scrolling of Parent</strong>
-                    <small>react-list-scroll-bound</small>
+                    <strong>Scroll-Prevention of Parent</strong>
+                    <small>react-scroll-bound</small>
                 </h1>
 
                 <p>When an children reach end of scrolling, stop scrolling of parent elements</p>
 
+                <br />
+                <br />
+                
                 <a href="https://github.com/fluse/react-list-scroll-bound" className="docu" target="_blank">Checkout Documentation</a>
                 <a href="https://www.npmjs.com/package/react-list-scroll-bound" className="npm" target="_blank">NPM Package</a>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
 
                 <h2>Example</h2>
 
@@ -46,6 +55,32 @@ class App extends Component {
                     </div>
                 </div>
 
+                <h2>Take a look at other Packages</h2>
+
+                <a href="https://www.npmjs.com/package/react-tab-visibility" className="npm" target="_blank">react-tab-visbility</a>
+
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
+                <br />
             </section>
         )
     }

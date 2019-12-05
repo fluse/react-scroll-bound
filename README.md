@@ -1,6 +1,7 @@
 # react-scroll-bound
 
-prevent scrolling on parent element if list reach end or start
+Prevent scrolling on parent element if list reached end or start.
+
 Brings a better control for user and increase use experience.
 
 **[Watch Demo](https://fluse.github.io/react-scroll-bound/)**

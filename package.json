@@ -1,11 +1,11 @@
 {
-    "name": "react-list-scroll-bound",
+    "name": "react-scroll-bound",
     "version": "16.12.0",
     "description": "prevent parent scrolling, if list scroll end reached, for better experience",
-    "main": "dist/listScrollBound.js",
+    "main": "dist/scrollBound.js",
     "repository": {
         "type": "git",
-        "url": "https://github.com/fluse/react-list-scroll-bound.git"
+        "url": "https://github.com/fluse/react-scroll-bound.git"
     },
     "keywords": [
         "react",
@@ -13,22 +13,22 @@
         "reactjs",
         "component",
         "scrolling",
-        "prevent body",
+        "prevent parent scrolling",
+        "scroll bound",
         "prevention",
-        "onWheel",
-        "list"
+        "onWheel"
     ],
     "author": "Holger D. Schauf",
     "website": "https://github.com/fluse/",
     "license": "MIT",
     "bugs": {
-        "url": "https://github.com/fluse/react-list-scroll-bound/issues"
+        "url": "https://github.com/fluse/react-scroll-bound/issues"
     },
     "homepage": "https://github.com/fluse/react-list-scroll-bound",
     "scripts": {
         "start": "webpack-dev-server --open --mode development",
         "page": "webpack --mode production --output-path page",
-        "build": "babel src/listScrollBound.jsx --out-dir dist"
+        "build": "babel src/scrollBound.jsx --out-dir dist"
     },
     "devDependencies": {
         "@babel/cli": "^7.7.4",

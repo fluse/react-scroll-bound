@@ -1,89 +1,79 @@
-# react-list-scroll-bound
-prevent body scrolling on list bottom or top end.
+# react-scroll-bound
+
+prevent scrolling on parent element if list reach end or start
 Brings a better control for user and increase use experience.
 
-## example
-
-![ScreenShot](/example.png)
+**[Watch Demo](https://fluse.github.io/react-scroll-bound/)**
 
 supports react 15.x and 16.x
 
-[![npm package](https://nodei.co/npm/react-list-scroll-bound.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/react-list-scroll-bound/)
-[![NPM](https://nodei.co/npm-dl/react-list-scroll-bound.png?months=6&height=3)](https://www.npmjs.com/package/react-list-scroll-bound)
-
-## install
+## Install
 
 ```
-> npm install react-list-scroll-bound --save
+npm install react-scroll-bound --save
 ```
 
-## how to use
+## Usage
 
 ```jsx
 
-<ListScrollBound className="my-list">
+import ScrollBound from 'react-scroll-bound'
+
+<ScrollBound>
     {this.getListPoints()}
-</ListScrollBound>
+</ScrollBound>
 
 ```
 
-### set html tag
+Set css for element overflow scroll
+
+```css
+.my-class-name {
+    max-height: 250px;
+    overflow-y: auto;
+}
+```
+
+### Change HTML-Tag
 
 default tagName is `<ul>`
 
 ```jsx
 
-<ListScrollBound tagName="div" className="my-list">
+<ScrollBound tagName="div">
     {this.getListPoints()}
-</ListScrollBound>
+</ScrollBound>
 
 ```
 
-### get events
+### Set properties
+
+all attributes and properties will transmitted with `{...this.props}`
 
 ```jsx
 
-let onWheel = function (event) {
-    console.log(event)
-}
-
-let onClick = function (event) {
-    console.log(event)
-}
-
-<ListScrollBound onWheel={onWheel} onClick={onClick} className="my-list">
+<ScrollBound 
+    id="name" 
+    onWheel={onWheel} 
+    onClick={onClick} 
+    className="my-list"
+>
     {this.getListPoints()}
-</ListScrollBound>
+</ScrollBound>
 
 ```
 
-### set more propTypes
-
-all given properties will set on the given ListScrollBound element, with
-
-`{...this.props}`
-
-so you can set all what you want and need
-
-```jsx
-
-<ListScrollBound tagName="div" className="my-list" onChange onClick>
-    {this.getListPoints()}
-</ListScrollBound>
-
-```
-
-### Development
+## Development
 
 if you want to add or optimize this component, feel free <3
 
-clone this repository and run install
+#### Run Dev Server
 
 ```
-npm install
+npm start
 ```
 
-and after changes compile es6 to es5
+### Compile to ES5
 
 ```
 npm run compile

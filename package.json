@@ -24,7 +24,7 @@
     "bugs": {
         "url": "https://github.com/fluse/react-scroll-bound/issues"
     },
-    "homepage": "https://github.com/fluse/react-list-scroll-bound",
+    "homepage": "https://github.com/fluse/react-scroll-bound",
     "scripts": {
         "start": "webpack-dev-server --open --mode development",
         "page": "webpack --mode production --output-path page",

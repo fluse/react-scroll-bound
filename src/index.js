@@ -27,9 +27,9 @@ class App extends Component {
 
                 <br />
                 <br />
-                
-                <a href="https://github.com/fluse/react-list-scroll-bound" className="docu" target="_blank">Checkout Documentation</a>
-                <a href="https://www.npmjs.com/package/react-list-scroll-bound" className="npm" target="_blank">NPM Package</a>
+
+                <a href="https://github.com/fluse/react-scroll-bound" className="docu" target="_blank">Checkout Documentation</a>
+                <a href="https://www.npmjs.com/package/react-scroll-bound" className="npm" target="_blank">NPM Package</a>
 
                 <br />
                 <br />
